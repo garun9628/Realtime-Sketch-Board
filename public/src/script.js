@@ -104,7 +104,7 @@ function createSticky(stickyTemplateHTML) {
 }
 
 function noteActions(minimize, remove, stickyContainer) {
-  remove.addEventListener(".click", (e) => {
+  remove.addEventListener("click", (e) => {
     stickyContainer.remove();
   });
   minimize.addEventListener("click", (e) => {
