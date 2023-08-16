@@ -7,7 +7,9 @@
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
     />
+    <link rel="shortcut icon" href="Icons/favicon.ico" type="image/x-icon" />
     <link rel="stylesheet" href="styles.css" />
+
     <title>Realtime Sketch Board</title>
   </head>
   <body>
@@ -39,7 +41,15 @@
     </div>
 
     <canvas></canvas>
+    <script
+      src="https://cdn.socket.io/4.6.0/socket.io.min.js"
+      integrity="sha384-c79GN5VsunZvi+Q/WObgk2in0CbZsHnjEqvFxC5DxHn9lTfNce2WW6h2pH6u/kF+"
+      crossorigin="anonymous"
+    ></script>
 
+    <script>
+      let socket = io.connect("http://localhost:5000");
+    </script>
     <script src="src/script.js"></script>
     <script src="src/canvas.js"></script>
   </body>
